@@ -3,7 +3,7 @@ package tw.group4._03_.cms.shop.model;
 import java.util.List;
 
 public interface ICreativeShopService {
-	public boolean checkShopId(CreativeShopBean bean);
+	public boolean checkShopId(int shopId);
 
 	public CreativeShopBean insert(CreativeShopBean bean);
 

@@ -60,6 +60,9 @@ public class UpdateShop {
 			int id = Integer.parseInt(shopId);
 			List<CreativeShopBean> shopsList = css.selectById(id);
 
+//			CreativeShopBean a = shopsList.get(0);
+//			System.out.println(a);
+			
 			if (shopsList.size() != 0) {
 				m.addAttribute("acShopsList", shopsList);
 			} else {

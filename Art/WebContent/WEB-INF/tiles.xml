@@ -334,7 +334,7 @@
 		extends="base.definition">
 		<put-attribute name="title" value="cms" />
 		<put-attribute name="body"
-			value="/WEB-INF/pages/03/cms/shop/update_confirm" />
+			value="/WEB-INF/pages/03/cms/shop/update_confirm.jsp" />
 	</definition>
 
 	<!-- 03 cms shop update_return -->
@@ -342,7 +342,7 @@
 		extends="base.definition">
 		<put-attribute name="title" value="cms" />
 		<put-attribute name="body"
-			value="/WEB-INF/pages/03/cms/shop/update_return" />
+			value="/WEB-INF/pages/03/cms/shop/update_return.jsp" />
 	</definition>
 
 	<!-- 03 cms shop delete -->

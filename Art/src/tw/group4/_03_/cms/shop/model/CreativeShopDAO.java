@@ -20,9 +20,9 @@ public class CreativeShopDAO {
 		this.sessionFacory = sessionFacory;
 	}
 
-	public boolean checkShopId(CreativeShopBean bean) {
+	public boolean checkShopId(int shopId) {
 		Session session = sessionFacory.getCurrentSession();
-		CreativeShopBean result = session.get(CreativeShopBean.class, bean.getShopId());
+		CreativeShopBean result = session.get(CreativeShopBean.class, shopId);
 
 		if (result != null) {
 			return true;

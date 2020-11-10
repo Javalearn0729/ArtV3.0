@@ -17,7 +17,7 @@
 	<br>
 	<div class=content>
 		<form method="post"
-			action="<c:url value="/03/cms/shop/DeleteCreativeShopByName.ctrl"/>">
+			action="<c:url value="/03/cms/shop/SearchCreativeShopByName.ctrl"/>">
 			<table id="03A"
 				class="display table table-bordered table-hover table-blue">
 				<thead>
@@ -34,7 +34,7 @@
 		</form>
 		<br>
 		<form method="post"
-			action="<c:url value="/03/cms/shop/DeleteCreativeShopById.ctrl"/>">
+			action="<c:url value="/03/cms/shop/SearchCreativeShopById.ctrl"/>">
 			<table id="03B"
 				class="display table table-bordered table-hover table-blue">
 				<thead>
@@ -52,27 +52,10 @@
 		</form>
 	</div>
 </div>
-
-
-
-
-
-
-	<form method="post" action="<c:url value="/03/cms/shop/SearchCreativeShopByName.ctrl"/>">
-		<label>請輸入商店名稱: </label> <input type="text" placeholder="請輸入商店名稱 "
-			name="name"> <span id=idsp class="colorGray"></span> <br />
-	</form>
-	<form method="post" action="<c:url value="/03/cms/shop/SearchCreativeShopById.ctrl"/>">
-		<label>請輸入商店編號: </label> <input type="text" placeholder="請輸入商店編號 "
-			name="shopId" id="shopId" > <span id=idsp2 class="colorGray"></span> <br />
-	</form>
-<%-- 	<form method="post" action="<c:url value="/03/cms/SearchAllCreativeShops.ctrl"/>"> --%>
-<!-- 		<button type="submit">查詢全部商店資料</button> -->
-<!-- 	</form> -->
-	<form>
-		<table>
-			<tr><td><a href="<c:url value='/03/cms/shop/Index' />">返回系統首頁</a></td></tr>
-		</table>
-	</form>
-</body>
-</html>
+<!-- ====================================================== -->
+<script>
+	$(document).ready(function() {
+		$('#03A').DataTable({});
+		$('#03B').DataTable({});
+	});
+</script>

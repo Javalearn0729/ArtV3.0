@@ -12,8 +12,8 @@ public class CreativeShopService implements ICreativeShopService {
 	private CreativeShopDAO creativeShopDAO;
 
 	@Override
-	public boolean checkShopId(CreativeShopBean bean) {
-		return creativeShopDAO.checkShopId(bean);
+	public boolean checkShopId(int shopId) {
+		return creativeShopDAO.checkShopId(shopId);
 	}
 	
 	@Override

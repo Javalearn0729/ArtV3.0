@@ -22,7 +22,7 @@
 				class="display table table-bordered table-hover table-blue">
 				<thead>
 					<tr>
-						<th>商店名稱查詢</th>
+						<th colspan="2" >商店名稱查詢</th>
 				</thead>
 				<tbody>
 					<tr>
@@ -39,12 +39,11 @@
 				class="display table table-bordered table-hover table-blue">
 				<thead>
 					<tr>
-						<th>商店代號查詢</th>
+						<th colspan="2" >商店代號查詢</th>
 				</thead>
 				<tbody>
 					<tr>
-						<td><input type="text" placeholder="請輸入商店代號 " name="shopId">
-						</td>
+						<td><input type="text" placeholder="請輸入商店代號 " name="shopId"></td>
 						<td></td>
 					</tr>
 				</tbody>
